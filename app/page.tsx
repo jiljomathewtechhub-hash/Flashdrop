@@ -29,7 +29,7 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a href="#services">Services</a><a href="#why-us">Why us</a><a href="#coverage">Coverage</a><a href="#contact">Contact</a>
         </nav>
-        <div className="nav-call"><small>Call us now</small><span className="phone-list"><a href="tel:+16478070287">+1 (647) 807-0287</a><a href="tel:+14166692417">+1 (416) 669-2417</a><a href="tel:+16476280694">+1 (647) 628-0694</a></span></div>
+        <a className="nav-cta" href="#contact"><small>Need a delivery?</small><strong>Contact us <span>→</span></strong></a>
       </header>
 
       <section className="hero" id="top">
