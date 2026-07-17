@@ -23,3 +23,7 @@
 .hero-visual{padding:42px;background:linear-gradient(145deg,#eef1f4 0%,#d9dfe5 100%);display:flex;align-items:center}
 @media(max-width:900px){.hero-visual{padding:28px}}
 @media(max-width:600px){.hero-visual{padding:16px}}
+
+.bot-field{position:absolute;overflow:hidden;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;padding:0;border:0}
+.form-status{text-align:center;margin:16px 0 0;font-size:12px;font-weight:700;line-height:1.5}.form-status.success{color:#087a45}.form-status.error{color:#c20c1b}
+form .button:disabled{cursor:wait;opacity:.7}

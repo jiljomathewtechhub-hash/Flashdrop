@@ -1,4 +1,5 @@
 import "./hero-panel.css";
+import ContactForm from "./ContactForm";
 
 const services = [
   { number: "01", title: "Same-Day Delivery", text: "Urgent local pickup and delivery across Toronto and the GTA, handled with speed and care.", tag: "TODAY" },
@@ -77,7 +78,7 @@ export default function Home() {
 
       <section className="contact" id="contact">
         <div className="contact-copy"><div className="eyebrow"><span></span>LET'S GET MOVING</div><h2>Need it delivered?<br/><em>Talk to us.</em></h2><p>Share your pickup, destination, package details, and timing. We’ll get back to you with a clear delivery plan.</p><div className="contact-lines"><a href="tel:+16478070287"><i>☎</i><span><small>Call us</small><strong>+1 (647) 807-0287</strong></span></a><a href="tel:+14166692417"><i>☎</i><span><small>Call us</small><strong>+1 (416) 669-2417</strong></span></a><a href="tel:+16476280694"><i>☎</i><span><small>Call us</small><strong>+1 (647) 628-0694</strong></span></a><a href="mailto:support@flashdropexpress.com"><i>✉</i><span><small>Email us</small><strong>support@flashdropexpress.com</strong></span></a></div></div>
-        <form action="mailto:support@flashdropexpress.com" method="post" encType="text/plain"><div className="field-row"><label>Your name<input name="name" required placeholder="Full name"/></label><label>Phone number<input name="phone" required type="tel" placeholder="(647) 000-0000"/></label></div><div className="field-row"><label>Pickup location<input name="pickup" required placeholder="City or postal code"/></label><label>Drop-off location<input name="dropoff" required placeholder="City or postal code"/></label></div><label>What are we delivering?<textarea name="details" rows={4} placeholder="Package size, timing, and anything else we should know"></textarea></label><button className="button primary" type="submit">Request my quote <span>→</span></button><small className="form-note">Prefer to talk? Choose any of our three contact numbers.</small></form>
+        <ContactForm />
       </section>
 
       <footer><a className="brand inverted" href="#top"><span className="brand-mark"><i>F</i><b>D</b></span><span className="brand-copy"><strong>FLASH<span>DROP</span></strong><small>EXPRESS</small></span></a><p>Fast. Reliable. Delivered.</p><div className="footer-links"><a href="#services">Services</a><a href="#coverage">Coverage</a><a href="#contact">Contact</a></div><div className="copyright">© 2026 FlashDrop Express. Toronto, Ontario, Canada.</div></footer>
