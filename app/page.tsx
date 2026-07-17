@@ -1,3 +1,5 @@
+import "./hero-panel.css";
+
 const services = [
   { number: "01", title: "Same-Day Delivery", text: "Urgent local pickup and delivery across Toronto and the GTA, handled with speed and care.", tag: "TODAY" },
   { number: "02", title: "Next-Day Delivery", text: "A dependable, cost-effective option for shipments that need to arrive the following business day.", tag: "TOMORROW" },
@@ -43,8 +45,17 @@ export default function Home() {
           </div>
           <div className="hero-visual">
             <div className="red-slice"></div>
-            <img src="/flashdrop-flyer.jpeg" alt="FlashDrop Express courier delivery services" />
-            <div className="availability"><b>●</b><span><strong>READY TO DISPATCH</strong><small>Toronto & GTA</small></span></div>
+            <div className="ops-board-v2">
+              <div className="ops-top-v2"><span>FlashDrop <b>Express</b></span><small><i></i> Available now</small></div>
+              <div className="ops-title-v2"><small>Toronto & GTA courier service</small><h2>From pickup<br/>to <em>delivered.</em></h2><p>Fast local delivery backed by direct communication and dependable service.</p></div>
+              <div className="ops-cards-v2">
+                <div><b>01</b><span><strong>Same-day</strong><small>For urgent deliveries</small></span></div>
+                <div><b>02</b><span><strong>Next-day</strong><small>Planned and reliable</small></span></div>
+                <div><b>03</b><span><strong>Direct route</strong><small>No unnecessary stops</small></span></div>
+              </div>
+              <div className="ops-route-v2"><span className="ops-dot-v2">A</span><i></i><span className="ops-van-v2">FD</span><i></i><span className="ops-dot-v2">B</span></div>
+              <div className="ops-bottom-v2"><span>Professional local delivery</span><a href="#contact">Book a delivery <b>→</b></a></div>
+            </div>
           </div>
         </div>
         <div className="trust-strip">{promises.map(([icon,title,text]) => <div key={title}><i>{icon}</i><span><strong>{title}</strong><small>{text}</small></span></div>)}</div>
